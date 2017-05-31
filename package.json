@@ -1,0 +1,23 @@
+{
+  "name": "express-passort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanyamagrawal/express-passort.git"
+  },
+  "author": "Sanyam Agrawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanyamagrawal/express-passort/issues"
+  },
+  "homepage": "https://github.com/sanyamagrawal/express-passort#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "passport": "^0.3.2"
+  }
+}
