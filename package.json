@@ -5,7 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "devtool server --watch"
+    "start": "devtool server --watch",
+    "build:client": "webpack --config webpack.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,10 @@
   "dependencies": {
     "express": "^4.15.3",
     "healthcheck-middleware": "^1.0.1",
-    "passport": "^0.3.2"
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.27",
+    "passport": "^0.3.2",
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
   }
 }
