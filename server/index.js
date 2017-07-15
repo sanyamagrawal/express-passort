@@ -1,36 +1,25 @@
 const express  = require('express');
-const passport = require('passport');
 const healthcheck = require('healthcheck-middleware');
-
 const dbMiddleware = require('./middlewares/dbMiddleware');
 
 class WebApp {
   constructor(app) {
     this.app = app;
-    this.healthCheck();
-    this.initDB();
+    this.initDatabase();
     this.initMiddleware();
     this.initServer();
   }
 
-  healthCheck() {
-    this.app.use('/ping', healthcheck());
-  }
-
-  initDB() {
+  initDatabase() {
     dbMiddleware();
   }
 
   initMiddleware() {
-
+    this.healthCheck();
   }
 
-  authMiddleware() {
-    this.app.get('/login', passport.authenticate('local', {
-      successRedirect: '/',
-      failureRedirect: '/login',
-      failureFlash: true
-    }));
+  healthCheck() {
+    this.app.use('/ping', healthcheck());
   }
 
   initServer() {

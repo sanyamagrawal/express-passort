@@ -4,9 +4,10 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
+    "build:prod": "webpack --config tools/webpack/webpack.config.prod.js -p",
+    "build:dev": "webpack --config tools/webpack/webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "devtool server --watch",
-    "build:client": "webpack --config webpack.js"
+    "start": "devtool server --watch"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,10 @@
     "mongodb": "^2.2.27",
     "passport": "^0.3.2",
     "react": "^15.5.4",
-    "webpack": "^2.6.1"
+    "webpack": "^3.2.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2"
   }
 }

@@ -1,3 +1,7 @@
-import isNil from 'lodash/isNil';
-
 console.log('Hello from Webpack');
+
+class Name {
+  constructor(props) {
+    debugger;
+  }
+}

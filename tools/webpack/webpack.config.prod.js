@@ -1,7 +1,8 @@
-module.exports = {
+const webpackProdConfig = {
   entry: './client/index.js',
   output: {
     filename: './dist/bundle.js'
-  },
-  watch: true
+  }
 };
+
+module.exports = webpackProdConfig;
