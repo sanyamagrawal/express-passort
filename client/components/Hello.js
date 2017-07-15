@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hello () {
   return (
-    <h1>Hello from React</h1>
+    <h1>Hello from React Sanyam</h1>
   )
 }
 
