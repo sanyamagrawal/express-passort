@@ -4,6 +4,7 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
+    "start:client": "webpack-dev-server --config tools/webpack/webpack.config.dev.js",
     "build:prod": "webpack --config tools/webpack/webpack.config.prod.js -p",
     "build:dev": "webpack --progress --colors --config tools/webpack/webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,17 +21,23 @@
   },
   "homepage": "https://github.com/sanyamagrawal/express-passort#readme",
   "dependencies": {
+    "lodash": "^4.17.4",
     "react": "^15.5.4",
-    "lodash": "^4.17.4"
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
     "express": "^4.15.3",
+    "file-loader": "^0.11.2",
     "healthcheck-middleware": "^1.0.1",
     "html-webpack-plugin": "^2.29.0",
     "mongodb": "^2.2.27",
     "passport": "^0.3.2",
     "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
     "webpack": "^3.2.0",
     "webpack-dev-server": "^2.5.1"
   }

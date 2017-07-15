@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'AmericanTypewriter';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/AmericanTypewriter.eot'),
+       url('../fonts/AmericanTypewriter.eot?#iefix') format('embedded-opentype');
+}
+
 body {
   background: blue;
+  font: 16pt 'AmericanTypewriter';
 }

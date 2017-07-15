@@ -1,9 +1,9 @@
+import React from 'react'
+import {render} from 'react-dom'
+
+
+import Hello from './components/Hello'
+
 import './styles/main.css';
 
-console.log('Hello from Webpack');
-
-class Name {
-  constructor(props) {
-    debugger;
-  }
-}
+render(<Hello />, document.querySelector('#app'))
